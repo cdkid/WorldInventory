@@ -1,0 +1,5 @@
+name: WorldInventory
+
+main: cdkid.WorldInventory.WorldInventory
+
+version: 0.1
