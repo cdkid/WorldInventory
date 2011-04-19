@@ -20,6 +20,7 @@ import java.util.Scanner;
  * int, int, short, byte
  * the first 4 positions store head, chest, legs, boots respectively
  */
+//some ugly code in here, to be cleaned up in later versions
 public class WIInventoryManager {
     private static final String stackSep        = "|";
     private static final String fieldSep        = ",";

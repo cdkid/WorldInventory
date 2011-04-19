@@ -12,7 +12,6 @@ public class WorldInventoryPlayerListener extends PlayerListener {
     public WorldInventoryPlayerListener() {
     }
 
-    //Insert Player related code here
     public void onPlayerQuit (PlayerQuitEvent event)
     {
         Player player = event.getPlayer();
@@ -20,6 +19,7 @@ public class WorldInventoryPlayerListener extends PlayerListener {
     }
     public void onPlayerTeleport (PlayerTeleportEvent event)
     {
+        //if they teleport to a different world, save/load inventory
         Player player = event.getPlayer();
         long to, from;
         to = event.getTo().getWorld().getId();

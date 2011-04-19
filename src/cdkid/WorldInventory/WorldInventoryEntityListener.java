@@ -5,12 +5,9 @@ import org.bukkit.event.entity.EntityDeathEvent;
 import org.bukkit.event.entity.EntityListener;
 
 public class WorldInventoryEntityListener extends EntityListener {
-    public WorldInventoryEntityListener()
-    {
-    }
     public void onEntityDeath(EntityDeathEvent event)
     {
-        if (event.getEntity() instanceof Player)
+        if (event.getEntity() instanceof Player) //somebody died
         {
             WIInventoryManager.saveInventory((Player) event.getEntity(), event.getEntity().getWorld());
         }
